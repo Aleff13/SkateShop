@@ -15,13 +15,15 @@
             <table>
                 <tr>
                     <td>
-                        <img src="<%#:Item.ImagePath %>" style="border:solid; width:300px" alt="<%#:Item.ProductName %>"/>
+                        <img src="<%#:Item.ImagePath %>" style=" width:300px" alt="<%#:Item.ProductName %>"/>
                     </td>
                     <td>&nbsp;</td>  
                     <td style="vertical-align: top; text-align:left;">
                         <b>Description:</b><br /><%#:Item.Description %>
                         <br />
                         <span><b>Price:</b>&nbsp;<%#: String.Format("{0:c}", Item.UnitPrice) %></span>
+                        <br />
+                        <asp:Button Text="Buy" style=" border-radius:15px; border:none; width:100px; background-color:chocolate; font-family:sans-serif; font-size:20px" runat="server" />
                         <br />
                         <span><b>Product Number:</b>&nbsp;<%#:Item.ProductID %></span>
                         <br />
